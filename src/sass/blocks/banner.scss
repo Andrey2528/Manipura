@@ -1,0 +1,34 @@
+.banner{
+    .container{
+        background-image: url("/src/img/mainBG.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        padding: 0px 0px 0px 0px;
+
+        display: flex;
+        align-items: center;
+        
+    }
+
+    &__item{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0px 0px 0px 432px;
+        h1{
+            margin: 0px 0px 10px 0px;
+        }
+        &--row{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: 90px 0px 0px 0px;
+            p{
+                margin: 0px 0px 0px 15px;
+            }
+        }
+    }
+}

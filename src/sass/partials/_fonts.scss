@@ -1,56 +1,40 @@
+/*--Fira-Code--*/
 @font-face {
-    font-family:"Noah";
-    src: url("../src/fonts/Noah-Regular-400.otf");
-    font-weight: 400;
-    font-style: normal;
-    font-display:swap;
-}
-
-@font-face {
-    font-family:"Noah";
-    src: url("../src/fonts/Noah-Bold-700.otf");
-    font-weight: 700;
-    font-style: normal;
-    font-display:swap;
-}
-
-@font-face {
-    font-family:"Roboto";
-    src: url("../src/fonts/roboto-light.otf");
+    font-family:"Fira-Code";
+    src: url('/src/fonts/FiraCode-Light.ttf');
     font-weight: 300;
     font-style: normal;
     font-display:swap;
 }
 
 @font-face {
-    font-family:"Roboto";
-    src: url("../src/fonts/roboto-thin.otf");
-    font-weight: 100;
-    font-style: normal;
-    font-display:swap;
-}
-
-@font-face{
-    font-family:"Montserrat";
-    src: url("../src/fonts/Montserrat-Black.otf");
-    font-weight: 900;
-    font-style: normal;
-    font-display:swap;
-}
-
-@font-face{
-    font-family:"Montserrat";
-    src: url("../src/fonts/Montserrat-Bold.otf");
+    font-family:"Fira-Code";
+    src: url('/src/fonts/FiraCode-Bold.ttf');
     font-weight: 700;
     font-style: normal;
     font-display:swap;
 }
 
-@font-face{
-    font-family:"Montserrat";
-    src: url("../src/fonts/Montserrat-Regular.otf");
+/*--Fira-Sans--*/
+
+@font-face {
+    font-family:"Fira-Sans";
+    src: url('/src/fonts/FiraSans-Light.ttf');
+    font-weight: 300;
+    font-style: normal;
+    font-display:swap;
+}
+@font-face {
+    font-family:"Fira-Sans";
+    src: url('/src/fonts/FiraSans-Regular.ttf');
     font-weight: 400;
     font-style: normal;
     font-display:swap;
 }
-
+@font-face {
+    font-family:"Fira-Sans";
+    src: url('/src/fonts/FiraSans-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+    font-display:swap;
+}
