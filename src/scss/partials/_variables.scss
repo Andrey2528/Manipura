@@ -1,8 +1,8 @@
 /*--fonts*/
 $base-font-size: 16px;
-$noahFont: Noah;
-$montserratFont: Montserrat;
-$robotoFont: Roboto;
+$font-firaCode: Fira-Code;
+$font-firaSans: Fira-Sans;
+
 
 /*--Container--breakpoints*/
 $containerWidth: 1200;
@@ -20,3 +20,14 @@ $burgerBreakPoints: $mobile-menu-breakpoint;
 /*--color--*/
 $black: #000000;
 $white: #fff;
+$semi-white: #F3F4E3;
+
+$base-white: #DADADA;
+$base-black: #202020;
+
+$accent-yelow: #D3D72B;
+$dark-yelow: #B5B823;
+
+$background: #C6C6B6;
+
+$text-def: #343444;
