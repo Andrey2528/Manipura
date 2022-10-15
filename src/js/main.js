@@ -8,6 +8,7 @@
             toggleMenu();
         });
 
+
         wpmmMobileMenuActive();
         $(window).on('resize load scroll', function () {
             wpmmMobileMenuActive();
@@ -36,7 +37,16 @@
                 }
             } 
         });
+        
+            $('#input__file').on('change', function () {
+        if ($(this).get(0).files.length !== 0) {
+            $('.input__file-button').addClass('selected');
+        } 
+        else  {
+            $('.input__file-button').removeClass('selected');    
+        }
     });
+});
 
     let mobileMenuIsActive = function () {
         return jQuery('header.header').hasClass('header-mobile');
@@ -51,10 +61,12 @@
         }
     }
 
+    
+
     // Add mobile class if mobile menu active
     function wpmmMobileMenuActive() {
         let current_width = parseInt($(window).width());
-        const responsive_breakpoint = 900;
+        const responsive_breakpoint = 600;
 
         if (current_width < (responsive_breakpoint + 1)) {
             if (!mobileMenuIsActive()) {
@@ -70,4 +82,20 @@
             }
         }
     }
+    
+    function onEntry(entry) {
+        entry.forEach(change => {
+            if (change.isIntersecting) {
+                change.target.classList.add('element-show');
+            }
+        });
+    }
+    let options = { threshold: [0.5] };
+    let observer = new IntersectionObserver(onEntry, options);
+    let elements = document.querySelectorAll('.element-animation');
+    for (let elm of elements) {
+        observer.observe(elm);
+    }
+
+
 })(jQuery);

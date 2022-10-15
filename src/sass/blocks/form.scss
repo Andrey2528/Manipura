@@ -1,0 +1,263 @@
+.input {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+
+    .container {
+        width: 90%;
+        margin: 117px 0 0 0;
+        @media (max-width: $maxDesc) {
+            width: 90%;
+        }
+
+        @media (max-width: $maxTablet) {
+            width: 100%;
+            margin: 117px auto 0 auto;
+        }
+
+        @media (max-width: $maxMobile) {
+            width: 100%;
+            font-size: 12px;
+            margin: 117px auto 0 auto;
+        }
+        
+    }
+
+	&__column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+	}
+
+	&__form {
+        background: $white;
+        box-shadow: 8px 24px 64px rgba(55, 77, 152, 0.3);
+        border-radius: 50px;
+        margin-top: 46px;
+        padding-top: 52px;
+        
+        @media (max-width: $maxTablet){
+            width: 88%;  
+            min-width: 300px;
+        }
+        @media (max-width: 320px){
+            margin-top: 25px;
+            width: 320px;  
+            border-radius: 0px;
+            padding-top: 25px;
+        }
+	}
+
+	&__wrapper {
+        width: 90%;
+        position: relative;
+        margin: 15px 0;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        
+        
+	}
+
+	&__file {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+	}
+
+    .selected{
+        display: none;
+    }
+
+	&__file-button {
+        width: 100%;
+        
+        &.selected{
+        display: block;
+
+            img{
+                display: none;
+            }
+
+            .input__file-button-text{
+
+                display: none;
+            }
+
+            .input__file-button-text.selected{
+                display: block;
+                padding: 20px 145px 20px 145px;
+                @media (max-width: $maxTablet) {
+                    padding: 20px ;
+                }
+            }
+        }
+        
+        @media (max-width: $maxDesc) {
+            max-width: 366px;
+            min-width: 366px;
+        }
+        @media (max-width: $maxTablet) {
+            max-width: 259px;
+            min-width: 259px;
+        }
+        @media (max-width: $maxMobile) {
+            max-width: 100%;
+            min-width: 136px;
+        }
+	}
+
+	&__file-icon-wrapper {
+        height: 24px;
+        width: 21px;
+        display: flex;
+        margin-right: 18px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 85px;  
+	}
+
+	&__file-button-text {
+        font-family: $robotoFont;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        padding-right: 98px;
+        text-transform: uppercase;
+        white-space: nowrap;
+
+        @media (max-width: $maxMobile) {
+            span{
+                display: none;
+            }  
+        }            
+	}
+
+    .main {
+        &__desc {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 112.9%;
+            color: $textLight;
+        }
+    }
+
+    .form {
+        &__column {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        &__input {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &::before{
+                color: #FAFBFE;
+            }
+            
+            input{
+                width: 100%;
+                border-radius: 50px;
+                box-shadow: inset 4px 4px 8px rgba(72, 117, 170, 0.05), inset -4px -4px 16px rgba(255, 255, 255, 0.25);
+                background: #FAFBFE;
+                padding: 24px 24px 24px 24px;
+                margin-bottom: 25px;
+                &::before{
+                    background: #FAFBFE;
+                }
+            }
+
+        }
+
+        &__text {
+            font-weight: bold;
+            color: $bluText;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            padding-left: 20px;
+        }
+
+        &__textarea {
+            textarea{
+                width: 100%;
+                resize: none;
+                overflow: auto;
+                padding: 15px 15px 5px 10px;
+                background: #FAFBFE;
+                box-shadow: inset 4px 4px 8px rgba(72, 117, 170, 0.05), inset -4px -4px 16px rgba(255, 255, 255, 0.25);
+                border-radius: 32px;
+                margin-bottom: 42px;
+            }
+        }
+
+        &__row {
+            display:flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        &__select {
+            margin-right: 20px;
+            width: 60%;
+            @media (max-width: $maxMobile) {
+                margin-right: 7px;
+            }
+        }
+
+        &__select-text {
+            font-size: 14px;
+            line-height: 16px;
+            padding: 0 0 15px 14px;
+            width: 45%;
+            color: $bluText;
+
+            @media (max-width: $maxMobile) {
+                padding: 0 0 0 0;   
+                margin-top: 0;
+            }
+            
+            span{
+                @media (max-width: $maxMobile) {
+                    display: none; 
+                }
+            }
+        }
+
+        &__submit {
+            background: $gradient;
+            font-family: $robotoFont;
+            font-weight: bold;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            border-radius: 100px;          
+            width: 100%;
+            padding: 30px 0 35px 0;
+            margin: 25px 0 52px 0;
+            max-height: 78px;  
+            color:$whiteText;
+            cursor: pointer;
+            text-transform: uppercase;
+
+            @media (max-width: $maxMobile) {
+                margin-bottom: 25px;
+            }
+
+            &::hover {
+                transform: translateY(-3px);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);   
+            }
+            &:hover{
+                opacity: 0.7;
+            }
+            &:active {
+                transform: translateY(-1px);
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+}
