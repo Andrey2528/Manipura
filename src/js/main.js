@@ -3,24 +3,36 @@
 
     $(document).ready(function () {
         $(window).scroll(function(){
-            let color = 'rgb(218,218,218)'
+            let color = 'rgb(218,218,218)';
             if ($(window).scrollTop() > 0 && $(window).scrollTop() < 970){
                 /*1*/
-                color = 'rgb(218,218,218)'
+                color = 'rgb(218,218,218)';
             }else if ($(window).scrollTop() > 970 && $(window).scrollTop() < 2060){
                 /*2*/
-                color = 'rgb(32,32,32)'
+                color = 'rgb(32,32,32)';
             }else if ($(window).scrollTop() > 2060 && $(window).scrollTop() < 3140){
                 /*3*/
-                color = 'rgb(218,218,218)'
+                color = 'rgb(218,218,218)';
             }else if ($(window).scrollTop() > 3140 && $(window).scrollTop() < 4220){
                 /*4*/
-                color = 'rgb(32,32,32)'
+                color = 'rgb(32,32,32)';
             }else if ($(window).scrollTop() > 4220 && $(window).scrollTop() < 5300){
                 /*5*/
-                color = 'rgb(32,32,32)'
+                color = 'rgb(32,32,32)';
             }else if ($(window).scrollTop() > 5300 && $(window).scrollTop() < 6380){
                 /*6*/
+                color = 'rgb(32,32,32)';
+            }else if ($(window).scrollTop() > 5300 && $(window).scrollTop() < 6380){
+                /*7*/
+                color = 'rgb(218,218,218)'
+            }else if ($(window).scrollTop() > 5300 && $(window).scrollTop() < 6380){
+                /*8*/
+                color = 'rgb(218,218,218)'
+            }else if ($(window).scrollTop() > 5300 && $(window).scrollTop() < 6380){
+                /*9*/
+                color = 'rgb(218,218,218)'
+            }else if ($(window).scrollTop() > 5300 && $(window).scrollTop() < 6380){
+                /*10*/
                 color = 'rgb(218,218,218)'
             }
 

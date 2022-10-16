@@ -1,0 +1,61 @@
+.meditation {
+    .container {
+        background-image: url("/src/img/meditationBG.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto;
+        background-color: $semi-white;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+    }
+
+    // .meditation__item
+
+    &__item {
+        margin: 283px 0px 0px 300px;
+    }
+
+    // .meditation__desc--row
+
+    &__desc--row {
+        display: flex;
+        flex-direction: row;
+        column-gap: 300px;
+        margin: 90px 0px 91px 0px;
+    }
+
+    &__link{
+        &--row{
+            display: flex;
+            flex-direction: row;
+            justify-content:end;
+            align-items: center;
+
+        }
+    }
+
+    
+    .main {
+
+        // .main__title
+
+        &__title {
+        }
+
+        // .main__desc
+
+        &__desc {
+            
+            color: $text-def;
+            max-width: 540px;
+
+        }
+
+        // .main__btn
+
+        &__btn {
+            margin: 0px 15px 0px 0px;
+        }
+    }
+}
