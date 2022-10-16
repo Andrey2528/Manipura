@@ -1,5 +1,4 @@
 .header {
-
     .container {
         position: fixed;
         top:0;right:0;left:0;
@@ -14,31 +13,7 @@
         align-items: center;
     }
 
-    // .header__logo
-
-    &__logo {
-    }
-
-    // .header__img
-
-    &__img {
-
-        // .header__img_wrap
-
-        &_wrap {
-        }
-    }
-
-    // .header__menu
-
-    &__menu {
-    }
-
-
     .menu {
-
-        // .menu__list
-
         &__list {
             display: flex;
             flex-direction: row;
@@ -46,14 +21,10 @@
             column-gap: 50px;
         }
 
-        // .menu__item
-
         &__item {
             display: flex;
             align-items: center;
         }
-
-        // .menu__link
 
         &__link {
             font-family: $font-firaSans;
@@ -62,7 +33,6 @@
             font-size: 24px;
             line-height: 145%;
             letter-spacing: 0.05em;
-    
             color: $base-white;
         }
     }
