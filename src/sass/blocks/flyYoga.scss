@@ -1,0 +1,62 @@
+.fly{
+    .container{
+        background-image: url("/src/img/flyBG.png");
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: auto;
+        background-color: $semi-white;
+        width: 100%;
+        height: 100vh;
+        padding: 0px 103px 0px 0px;
+        display: flex;
+        justify-content: flex-end;   
+    }
+
+    &__item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: end;
+        max-width: 900px;
+    }
+
+    &__desc{
+        p{
+            margin: 0px 0px 10px 0px;
+        }
+        
+        &--row{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin: 81px 0px 0px 0px;
+
+            p{
+                margin: 0px 0px 0px 0px;
+            }
+
+            &.row{
+                display: flex;
+                flex-direction: row;
+                margin: 0px 0px 0px 0px;
+            
+                p{
+                    margin: 0px 0px 0px 15px;
+                }
+            }
+        }
+    }
+
+    .main{
+        &__subtitle{
+            text-align: end;
+            color: $text-def;
+            margin: 10px 0px;
+        }
+        &__desc{
+            text-align: end;
+            color: $text-def;
+        }
+    }
+}

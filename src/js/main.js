@@ -2,12 +2,36 @@
     'use strict';
 
     $(document).ready(function () {
+        $(window).scroll(function(){
+            let color = 'rgb(218,218,218)'
+            if ($(window).scrollTop() > 0 && $(window).scrollTop() < 970){
+                /*1*/
+                color = 'rgb(218,218,218)'
+            }else if ($(window).scrollTop() > 970 && $(window).scrollTop() < 2060){
+                /*2*/
+                color = 'rgb(32,32,32)'
+            }else if ($(window).scrollTop() > 2060 && $(window).scrollTop() < 3140){
+                /*3*/
+                color = 'rgb(218,218,218)'
+            }else if ($(window).scrollTop() > 3140 && $(window).scrollTop() < 4220){
+                /*4*/
+                color = 'rgb(32,32,32)'
+            }else if ($(window).scrollTop() > 4220 && $(window).scrollTop() < 5300){
+                /*5*/
+                color = 'rgb(32,32,32)'
+            }else if ($(window).scrollTop() > 5300 && $(window).scrollTop() < 6380){
+                /*6*/
+                color = 'rgb(218,218,218)'
+            }
+
+            $(".menu__link").css('color', color);
+            $(".svgClass").css("fill", color);
+        });
 
         $('.nav__mobile-btn').on('click', function (e) {
             e.preventDefault();
             toggleMenu();
         });
-
 
         wpmmMobileMenuActive();
         $(window).on('resize load scroll', function () {
@@ -37,16 +61,7 @@
                 }
             } 
         });
-        
-            $('#input__file').on('change', function () {
-        if ($(this).get(0).files.length !== 0) {
-            $('.input__file-button').addClass('selected');
-        } 
-        else  {
-            $('.input__file-button').removeClass('selected');    
-        }
     });
-});
 
     let mobileMenuIsActive = function () {
         return jQuery('header.header').hasClass('header-mobile');
@@ -60,8 +75,6 @@
             $('html, body').css('overflow-y', 'visible');
         }
     }
-
-    
 
     // Add mobile class if mobile menu active
     function wpmmMobileMenuActive() {
@@ -97,5 +110,6 @@
         observer.observe(elm);
     }
 
+    
 
 })(jQuery);
