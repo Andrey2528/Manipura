@@ -22,18 +22,18 @@
             }else if ($(window).scrollTop() > 5300 && $(window).scrollTop() < 6380){
                 /*6*/
                 color = 'rgb(32,32,32)';
-            }else if ($(window).scrollTop() > 5300 && $(window).scrollTop() < 6380){
+            }else if ($(window).scrollTop() > 6380 && $(window).scrollTop() < 7460){
                 /*7*/
-                color = 'rgb(218,218,218)'
-            }else if ($(window).scrollTop() > 5300 && $(window).scrollTop() < 6380){
+                color = 'rgb(32,32,32)';
+            }else if ($(window).scrollTop() > 7460 && $(window).scrollTop() < 8540){
                 /*8*/
-                color = 'rgb(218,218,218)'
-            }else if ($(window).scrollTop() > 5300 && $(window).scrollTop() < 6380){
+                color = 'rgb(218,218,218)';
+            }else if ($(window).scrollTop() > 8540 && $(window).scrollTop() < 9620){
                 /*9*/
-                color = 'rgb(218,218,218)'
-            }else if ($(window).scrollTop() > 5300 && $(window).scrollTop() < 6380){
+                color = 'rgb(218,218,218)';
+            }else if ($(window).scrollTop() > 9620 && $(window).scrollTop() < 10000){
                 /*10*/
-                color = 'rgb(218,218,218)'
+                color = 'rgb(32,32,32)';
             }
 
             $(".menu__link").css('color', color);
