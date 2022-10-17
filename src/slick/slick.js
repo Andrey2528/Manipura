@@ -44,8 +44,8 @@
                 appendDots: $(element),
                 arrows: true,
                 asNavFor: null,
-                prevArrow: '<button class="slick-prev" aria-label="Previous" type="button">Previous</button>',
-                nextArrow: '<button class="slick-next" aria-label="Next" type="button">Next</button>',
+                prevArrow: '<div class="meditation__link--row row"><a class="slider-prev"><span></span></a></div>',
+                nextArrow: '<div class="meditation__link--row row"><a class="slider-next"><span></span></a></div>',
                 autoplay: false,
                 autoplaySpeed: 3000,
                 centerMode: false,
@@ -55,7 +55,7 @@
                     return $('<button type="button" />').text(i + 1);
                 },
                 dots: false,
-                dotsClass: 'slick-dots',
+                dotsClass: 'slider-dots',
                 draggable: true,
                 easing: 'linear',
                 edgeFriction: 0.35,
@@ -584,8 +584,8 @@
             _.$slider.empty().append(newSlides);
             _.$slider.children().children().children()
                 .css({
-                    'width':(100 / _.options.slidesPerRow) + '%',
-                    'display': 'inline-block'
+                    'width':(100 / _.options.slidesPerRow) + '%'
+                    //'display': 'inline-block'
                 });
 
         }

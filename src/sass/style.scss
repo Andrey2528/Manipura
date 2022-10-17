@@ -9,6 +9,9 @@
 @import "partials/_footer";
 @import "partials/_general";
 
+@import "../slick/slick.scss";
+@import "../slick/slick-theme.scss";
+
 /*---main page---*/
 @import "blocks/banner.scss";
 @import "blocks/events.scss";
@@ -16,3 +19,4 @@
 @import "blocks/hathaYoga.scss";
 @import "blocks/flyYoga.scss";
 @import "blocks/meditation.scss";
+@import "blocks/coaches.scss";

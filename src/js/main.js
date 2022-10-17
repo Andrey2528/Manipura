@@ -2,6 +2,12 @@
     'use strict';
 
     $(document).ready(function () {
+        $('.coaches__slider').slick({
+            infinite: true,
+            dots: true,
+            slidesToShow: 1,
+            autoplay: false,
+        });
         $(window).scroll(function(){
             let color = 'rgb(218,218,218)';
             if ($(window).scrollTop() > 0 && $(window).scrollTop() < 970){
