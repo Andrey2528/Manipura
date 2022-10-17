@@ -2,13 +2,14 @@
     'use strict';
 
     $(document).ready(function () {
+
         $(window).on('load', function() {
             setTimeout(() => {   
                 $('.preloader').fadeOut().end().delay(400).fadeOut('slow')},
-                2000
-                );
-           
+                0
+            );
         });
+        $('.str').liMarquee();
         $('.coaches__slider').slick({
             infinite: true,
             dots: true,
@@ -16,6 +17,7 @@
             autoplay: true,
             autoplaySpeed: 5000
         });
+
         $(window).scroll(function(){
             let color = 'rgb(218,218,218)';
             if ($(window).scrollTop() > 0 && $(window).scrollTop() < 970){
