@@ -6,7 +6,8 @@
             infinite: true,
             dots: true,
             slidesToShow: 1,
-            autoplay: false,
+            autoplay: true,
+            autoplaySpeed: 5000
         });
         $(window).scroll(function(){
             let color = 'rgb(218,218,218)';

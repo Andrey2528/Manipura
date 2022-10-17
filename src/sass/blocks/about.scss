@@ -32,33 +32,4 @@
             }
         }
     }
-    .marque{
-        &__text{
-            font-family: $font-firaCode;
-            font-style: normal;
-            font-weight: 700;
-            font-size: 128px;
-            line-height: 168px;
-
-            letter-spacing: 0.05em;
-            color: $base-black;
-            text-shadow: 
-                -0   -1px 0   #B5B823,
-                0   -1px 0   #B5B823,
-                -0    1px 0   #B5B823,
-                0    1px 0   #B5B823,
-                -1px -0   0   #B5B823,
-                1px -0   0   #B5B823,
-                -1px  0   0   #B5B823,
-                1px  0   0   #B5B823,
-                -1px -1px 0   #B5B823,
-                1px -1px 0   #B5B823,
-                -1px  1px 0   #B5B823,
-                1px  1px 0   #B5B823,
-                -1px -1px 0   #B5B823,
-                1px -1px 0   #B5B823,
-                -1px  1px 0   #B5B823,
-                1px  1px 0   #B5B823;
-            }
-    }
 }
