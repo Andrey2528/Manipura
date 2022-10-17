@@ -2,6 +2,13 @@
     'use strict';
 
     $(document).ready(function () {
+        $(window).on('load', function() {
+            setTimeout(() => {   
+                $('.preloader').fadeOut().end().delay(400).fadeOut('slow')},
+                2000
+                );
+           
+        });
         $('.coaches__slider').slick({
             infinite: true,
             dots: true,

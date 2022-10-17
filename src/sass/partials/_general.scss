@@ -82,3 +82,20 @@ body{
     }
 }
 
+.preloader{
+    &__img-wrap{
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 10000000001;
+    }
+}
+
+.loaded_hiding .preloader {
+    transition: 0.3s opacity;
+    opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
