@@ -1,5 +1,4 @@
 .price {
-
     .container {
         width: 100%;
         background-color: $base-black;
@@ -12,10 +11,6 @@
         margin: 0px 0px 0px 249px;
     }
 
-
-    // .price__list
-
-    
     &__list {
         display: flex;
         flex-direction: row;
@@ -23,20 +18,12 @@
         margin: 90px 0px 0px 0px;
     }
 
-    // .price__item
-
     &__item {
         display: flex;
         flex-direction: column;
     }
 
-
     .main {
-
-        // .main__title
-
-        &__title {
-        }
         &__desc{
             font-size: 32px;
             line-height: 140%;

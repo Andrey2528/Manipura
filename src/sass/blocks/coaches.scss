@@ -1,6 +1,5 @@
 .coaches {
     .container {
-        
         width: 100%;
         height: 100vh;
     }
@@ -8,10 +7,8 @@
     &__item {
         margin: 96px 0px 0px 249px;
     }
-    // .coaches__slider
 
     &__slider {
-        //z-index: -1;
         margin: -70px 103px 0px 103px;
         display: flex;
         flex-direction: row;
@@ -20,19 +17,9 @@
     .slide {
         display: flex;
         flex-direction: row;
-        // .slide__img--wrap
-
         &__img--wrap {
             margin: 0px 0px 0px 56px;
         }
-
-        // .slide__subtitle
-
-        &__subtitle {
-
-        }
-
-        // .slide__desc
 
         &__desc--container {
             margin: 0px 0px 0px 40px;
@@ -40,25 +27,17 @@
             flex-direction: column;
             justify-content: flex-end;
             max-width: 545px;
-            
         }
     }
     .main {
-
-        // .main__title
-
         &__title {
             z-index: 10;
             position: relative;
         }
 
-        // .main__subtitle
-
         &__subtitle {
             color: $text-def;
         }
-
-        // .main__desc
 
         &__desc {
             color: $text-def;

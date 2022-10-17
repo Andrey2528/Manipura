@@ -1,5 +1,4 @@
 .footer {
-    
     .container {
         width: 100%;
         height: 100vh;
@@ -19,8 +18,6 @@
         margin: 180px 0px 0px 0px;
     }
 
-    // .footer__item
-
     &__item {
         display: flex;
         flex-direction: row;
@@ -36,27 +33,16 @@
     }
 
     .main {
-
-        // .main__title
-
-        &__title {
-        }
-
-        // .main__subtitle
-
         &__subtitle {
             margin: 20px 0px 0px 0px;
             color: $text-def;
         }
-
-        // .main__desc
 
         &__desc {
             color: $text-def;
             span{
                 font-weight: 400;
             }
-            
         }
     }
 }
