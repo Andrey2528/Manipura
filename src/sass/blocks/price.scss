@@ -1,0 +1,41 @@
+.price {
+    .container {
+        width: 100%;
+        background-color: $base-black;
+        height: 100vh;
+        position: relative;
+        padding: 270px 0px 0px 0px;
+    }
+    
+    &__wrap{
+        margin: 0px 0px 0px 249px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        column-gap: 289px;
+        margin: 90px 0px 0px 0px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main {
+        &__desc{
+            font-size: 32px;
+            line-height: 140%;
+            span{
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 140%;
+            }
+        }
+    }
+    .str{
+        position: absolute;
+        bottom: 50px;
+    }
+}

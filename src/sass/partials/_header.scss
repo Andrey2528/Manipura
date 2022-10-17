@@ -1,0 +1,43 @@
+.header {
+    .container {
+        position: fixed;
+        top:0;right:0;left:0;
+        z-index: 1000;
+        margin: 70px 104px 0px 104px;
+    }
+
+    &__row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu {
+        &__list {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            column-gap: 50px;
+        }
+
+        &__item {
+            display: flex;
+            align-items: center;
+        }
+
+        &__link {
+            font-family: $font-firaSans;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 145%;
+            letter-spacing: 0.05em;
+            color: $base-white;
+            &:hover{
+                color: $dark-yelow;
+                font-weight: 400;
+            }
+        }
+    }
+}
